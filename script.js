@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', function() {
-	var everything = document.getElementById('everything');
-	var introElement = document.getElementById('intro');
+	let everything = document.getElementById('everything');
+	let introElement = document.getElementById('intro');
 	everything.style.opacity = '0'
 	introElement.style.opacity = '1'
 	setTimeout(function() {
@@ -14,10 +14,10 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 function scrollToSection(sectionId) {
-	const section = document.getElementById(sectionId);
+	let section = document.getElementById(sectionId);
 
-	const rect = section.getBoundingClientRect();
-	const yCoordinate = rect.top + window.pageYOffset;
+	let rect = section.getBoundingClientRect();
+	let yCoordinate = rect.top + window.pageYOffset;
   
 	window.scrollTo({
   		top: yCoordinate - 75, // -75 for accounting nav height
