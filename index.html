@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>delsix</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="intro"><span>Danislav Anufriev</span> <span id="intro2">portfolio</span></div>
+
+	<div id="everything">
+		<nav>
+			<div id="title"><a href="index.html">delsix</a></div>
+			<div id="buttons">
+				<div class="button"><button onclick="scrollToSection('about-me')">about</button></div>
+				<div class="button"><button onclick="scrollToSection('my-skills')">skills</button></div>
+				<div class="button"><button onclick="scrollToSection('my-projects')">projects</button></div>
+				<div class="button"><button onclick="scrollToSection('contact')">contact</button></div>
+			</div>
+		</nav>
+
+		<main>
+			<section id="about-me">
+				<h1>About Me</h1>
+				<p class="about">My name is Danislav Anufriev. I was born in Ukraine, Kyiv at 12th April, 2005. I loved PCs and everything about them since I was 4 years old. I've always been close to techonologies and IT and started getting into programming when I was 13. I was switching many languages along the way: HTML, CSS, JS to C# then back to HTML, CSS, JS then Python to finally Java. I'm developing in Java since Spring of 2022, but I have to notice thatat the time I already had great knowledge of Programming overall coming from my experience with Python (such as OOP concepts, Data Structures, Algorithmes and so on. Right now I devote all my free time to software development with a huge motivation to become better as a developer and as a person</p>
+			</section>
+
+			<section id="my-skills">
+				<h1>My Skills</h1>
+				<ul id="skills">
+					<li>Java</li>
+					<li>Python</li>
+					<li>SQL</li>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JavaScript</li>
+					<li>Spring Boot</li>
+					<li>Spring Data JPA</li>
+					<li>Spring MVC</li>
+					<li>Spring AMQP</li>
+					<li>Docker</li>
+					<li>RabbitMQ</li>
+				</ul>
+			</section>
+
+			<section id="my-projects">
+				<h1 class="headline"><a href="https://github.com/Dels1x?tab=repositories" target="_blank">My Projects</a></h1>
+				<div class="project">
+					<p class="title"><a href="https://github.com/Dels1x/TaskManagerBot" target="_blank">Task Manager Telegram Bot</a></p>
+					<div class="project-info">
+						<div class="description">
+							<p>This is a Telegram bot that provides users with the multiple weather information for a given city</p>
+						</div>
+						<div class="stack">
+							<ul class="technologies">
+								<li>Java</li>
+								<li>Spring MVC</li>
+								<li>Spring DATA Jpa</li>
+								<li>Docker</li>
+								<li>RabbitMQ</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="project">
+					<p class="title"><a href="https://github.com/Dels1x/WeatherBot" target="_blank">Weather Telegram Bot</a></p>
+					<div class="project-info">
+						<div class="description">
+							<p>This is a Telegram bot that provides users with the multiple weather information for a given city</p>
+						</div>
+						<div class="stack">
+							<ul class="technologies">
+								<li>Java</li>
+								<li>Spring MVC</li>
+								<li>okhttp3</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- Add more projects as needed -->
+			</section>
+		</main>
+
+		<footer id="contact">
+			<div><h3>How to contact me:</h3>
+				<p class="about">Telegram: #dels1x</p></div>
+			</footer>
+		</div>
+	</body>
+</html>

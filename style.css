@@ -1,0 +1,304 @@
+* Reset and base styles  */
+* {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+body {
+	margin: 0;
+	background-color: #FFF;
+	color: #000;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+	    padding-inline-start: 0;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+  /* Resetting box model */
+  padding: 0;
+  margin: 0;
+  border: none;
+  /* Resetting text styles */
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  /* Resetting background and outline */
+  background: none;
+  outline: none;
+  /* Resetting cursor */
+  cursor: pointer;
+  /* Resetting other styles */
+  vertical-align: middle;
+}
+
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+/* end of css reset */
+
+
+main {
+	padding-top: 70px;
+	padding-left: 200px;
+	padding-right: 200px;
+	text-align: center;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+
+section {
+	margin-bottom: 40px;
+	border-bottom: 1px solid black;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 50px;
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 28px;
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+}
+
+#my-projects {
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-bottom: 0;
+	margin-top: 0;
+	border-bottom: none;
+}
+
+.project {
+	border: 1px solid #000;
+	margin-top: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.project .title {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+#my-projects a {
+	transition: color 250ms, text-shadow 250ms;
+}
+
+#my-projects a:hover {
+	color: white;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	transition: color 500ms, text-shadow 500ms;
+}
+
+.project p {
+	font-size: 22px;
+	font-weight: 400;
+}
+
+.project-info {
+	display: flex;
+	padding: 0;
+}
+
+.project .description {
+	width: 80%;
+	border-right: 1px solid black;
+	border-top: 1px solid black;
+}
+
+.project .stack {
+	width: 20%;
+	border-top: 1px solid black;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.about {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 22px;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #171717;
+	margin: 0;
+	border-bottom: 1px solid #FFF;
+ 	display: flex;
+ 	justify-content: space-between;
+ 	align-items: center;
+}
+
+#title {
+	font-size: 40px;
+	color: #fff;
+	margin: 3px;
+	margin-left: 12px;
+	margin-right: 24px;
+	font-family: 'Kanit', sans-serif;
+	transition: transform 100ms;
+}
+
+#buttons {
+  display: flex;
+}
+
+.button {
+  font-size: 40px;
+  color: #fff;
+  margin: 3px;
+  margin-left: 12px;
+  margin-right: 24px;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 200;
+  transition: transform 100ms;
+}
+
+#title:hover {
+	transform: scale(1.1);
+	transition: transform 100ms;
+}
+
+.button:hover {
+	transform: scale(1.1);
+	transition: transform 100ms;
+}
+
+#everything {
+	opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+#intro {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 64px;
+      font-family: "Kanit", sans-serif;
+      font-weight: 600;
+      color: #000;
+      opacity: 1;
+      transition: opacity 1s ease-in-out;
+}
+
+#intro2 {
+	font-family: "Kanit", sans-serif;
+    font-weight: 300;
+}
+
+#skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create three equal-width columns */
+  list-style: none;
+  padding: 0;
+  padding-left: 250px;
+  padding-right: 250px;
+  gap: 8px; /* Add some gap between items */
+  font-size: 40px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+}
+
+#skills li {
+  text-align: center; /* Optionally center-align the skills */
+  font-size: 40px;
+  transition: font-size 100ms;
+}
+
+#skills li:hover {
+	font-size: 44px;
+	transition: font-size 200ms;
+}
