@@ -339,7 +339,7 @@ nav {
 	}
 
 	#title {
-		height: 32px;
+		display: none;
 	}
 
 	#buttons {
