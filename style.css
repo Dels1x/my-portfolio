@@ -293,13 +293,8 @@ nav {
 
 #skills li {
   text-align: center; /* Optionally center-align the skills */
-  font-size: 28px;
+  font-size: 32px;
   transition: font-size 100ms ease-in-out;
-}
-
-#skills li:hover {
-	font-size: 30px;
-	transition: font-size 200ms ease-in-out;
 }
 
 #contact h3 {
@@ -361,4 +356,31 @@ nav {
 		width: 100%;
 	}
 
+	h1 {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		font-size: 32px;
+	}
+
+	h2 {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		font-size: 22px;
+	}
+
+	h3 {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		font-size: 18px;
+	}
+
+	#skills li {
+		text-align: center; /* Optionally center-align the skills */
+		font-size: 26px;
+		transition: font-size 100ms ease-in-out;
+	}
+
+	#my-projects {
+		margin: 0;
+	}
 }
