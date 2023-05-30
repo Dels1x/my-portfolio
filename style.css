@@ -149,6 +149,11 @@ h3 {
 	font-size: 24px;
 }
 
+#everything {
+	opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
 #my-projects {
 	margin: 0 200px;
 	padding-bottom: 40px;
@@ -255,11 +260,6 @@ nav {
 	background-color: white;
 	color: black;
 	transition: color 50ms ease-out, background-color 100ms ease-out;
-}
-
-#everything {
-	opacity: 1;
-    transition: opacity 1s ease-in-out;
 }
 
 #intro {

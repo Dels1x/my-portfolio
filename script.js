@@ -1,7 +1,6 @@
 window.addEventListener('DOMContentLoaded', function() {
 	const everything = document.getElementById('everything');
 	const introElement = document.getElementById('intro');
-	everything.style.opacity = '0'
 	introElement.style.opacity = '1'
 	setTimeout(function() {
 		everything.style.opacity = '1';
@@ -37,9 +36,7 @@ function copyText(text) {
 }
 
 function toggleTheme() {
-	const elementsToStyle = document.querySelectorAll("main, footer, nav");
+	const element = document.getElementById("everything");
 
-	elementsToStyle.forEach((element) => {
-			element.classList.toggle("dark-theme");
-	});
+	element.classList.toggle("dark-theme");
 }
