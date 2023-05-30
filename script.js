@@ -1,7 +1,6 @@
 window.addEventListener('DOMContentLoaded', function() {
 	const everything = document.getElementById('everything');
 	const introElement = document.getElementById('intro');
-	introElement.style.opacity = '1'
 	setTimeout(function() {
 		everything.style.opacity = '1';
 		introElement.style.opacity = '0'

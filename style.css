@@ -195,17 +195,16 @@ h3 {
 .project-info {
 	display: flex;
 	padding: 0;
+	border-top: 1px solid black;
 }
 
 .project .description {
 	width: 80%;
 	border-right: 1px solid black;
-	border-top: 1px solid black;
 }
 
 .project .stack {
 	width: 20%;
-	border-top: 1px solid black;
 	font-size: 18px;
 	font-weight: 500;
 }
@@ -382,5 +381,13 @@ nav {
 
 	#my-projects {
 		margin: 0;
+	}
+
+	.project-info .description {
+		width: 66%;
+	}
+
+	.project-info .technologies {
+		width: 34%;
 	}
 }
