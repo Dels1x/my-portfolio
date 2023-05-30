@@ -109,7 +109,7 @@ legend {
 
 
 main {
-	padding-top: 70px;
+	padding-top: 90px;
 	padding-left: 200px;
 	padding-right: 200px;
 	text-align: center;
@@ -119,13 +119,13 @@ footer {
   background-color: #000;
   color: #fff;
   padding: 20px;
-  margin-top: 50px;
   text-align: center;
 }
 
 
 section {
-	margin-bottom: 40px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
 	border-bottom: 1px solid black;
 }
 
@@ -149,6 +149,7 @@ h3 {
 
 #my-projects {
 	margin: 0 200px;
+	padding-bottom: 40px;
 	border-bottom: none;
 }
 
@@ -156,6 +157,10 @@ h3 {
 	border: 1px solid #000;
 	margin-top: 20px;
 	font-family: 'Montserrat', sans-serif;
+}
+
+.project:hover {
+	box-shadow: 0 0 0 #000, 0 0 0 #000, 0 2px 0 #000, 0 0 0 #000;
 }
 
 .project .title {
@@ -169,7 +174,7 @@ h3 {
 	transition: color 250ms, text-shadow 250ms;
 }
 
-#my-projects a:hover {
+#my-projects .title:hover {
 	color: white;
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 	transition: color 500ms, text-shadow 500ms;
@@ -225,27 +230,29 @@ nav {
 	transition: transform 100ms;
 }
 
-#buttons {
-  display: flex;
-}
-
-.button {
-  font-size: 40px;
-  color: #fff;
-	margin: 3px 24px 3px 12px;
-	font-family: 'Kanit', sans-serif;
-  font-weight: 200;
-  transition: transform 100ms;
-}
-
 #title:hover {
 	transform: scale(1.1);
 	transition: transform 100ms;
 }
 
+#buttons {
+  display: flex;
+}
+
+.button {
+	font-size: 40px;
+	color: #fff;
+	padding: 3px 16px 3px 16px;
+	font-family: 'Kanit', sans-serif;
+	font-weight: 200;
+	transition: background-color 50ms ease-in;
+	height: 100%;
+}
+
 .button:hover {
-	transform: scale(1.1);
-	transition: transform 100ms;
+	background-color: white;
+	color: black;
+	transition: color 50ms ease-out, background-color 100ms ease-out;
 }
 
 #everything {
@@ -263,7 +270,7 @@ nav {
       font-weight: 600;
       color: #000;
       opacity: 1;
-      transition: opacity 1s ease-in-out;
+      transition: opacity 1s ease-in;
 }
 
 #intro2 {
@@ -285,10 +292,42 @@ nav {
 #skills li {
   text-align: center; /* Optionally center-align the skills */
   font-size: 40px;
-  transition: font-size 100ms;
+  transition: font-size 100ms ease-in-out;
 }
 
 #skills li:hover {
 	font-size: 44px;
-	transition: font-size 200ms;
+	transition: font-size 200ms ease-in-out;
+}
+
+#contact h3 {
+	font-size: 32px;
+}
+
+#contact .about {
+	padding-bottom: 8px;
+}
+
+.copy-text {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.copy-text:hover {
+	color: #DDD;
+}
+
+.dark-theme {
+	background-color: #000;
+	color: #fff;
+}
+
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3 {
+	color: #fff;
+}
+
+.dark-theme .copy-text {
+	color: #ddd;
 }

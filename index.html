@@ -17,12 +17,12 @@
 
 	<div id="everything">
 		<nav>
-			<div id="title"><a href="index.html">delsix</a></div>
+			<div id="title"><button onclick="toggleTheme()">delsix</button></div>
 			<div id="buttons">
 				<div class="button"><button onclick="scrollToSection('about-me')">about</button></div>
 				<div class="button"><button onclick="scrollToSection('my-skills')">skills</button></div>
 				<div class="button"><button onclick="scrollToSection('my-projects')">projects</button></div>
-				<div class="button"><button onclick="scrollToSection('contact')">contact</button></div>
+				<div class="button"><button onclick="scrollToSection('my-contact')">contact</button></div>
 			</div>
 		</nav>
 
@@ -52,8 +52,8 @@
 
 			<section id="my-projects">
 				<h1 class="headline"><a href="https://github.com/Dels1x?tab=repositories" target="_blank">My Projects</a></h1>
-				<div class="project">
-					<p class="title"><a href="https://github.com/Dels1x/TaskManagerBot" target="_blank">Task Manager Telegram Bot</a></p>
+				<a href="https://github.com/Dels1x/TaskManagerBot" target="_blank"><div class="project">
+					<p class="title">Task Manager Telegram Bot</p>
 					<div class="project-info">
 						<div class="description">
 							<p>This is a Telegram bot that provides users with the multiple weather information for a given city</p>
@@ -68,7 +68,7 @@
 							</ul>
 						</div>
 					</div>
-				</div>
+				</div></a>
 				<div class="project">
 					<p class="title"><a href="https://github.com/Dels1x/WeatherBot" target="_blank">Weather Telegram Bot</a></p>
 					<div class="project-info">
@@ -88,10 +88,14 @@
 			</section>
 		</main>
 
-		<footer id="contact">
-			<div><h3>How to contact me:</h3>
-				<p class="about">Telegram: #dels1x</p></div>
-			</footer>
-		</div>
-	</body>
+		<footer id="my-contact">
+			<div id="contact">
+				<h3 class="about">How to contact me:</h3>
+				<p class="about">e-mail: <button onclick="copyText('danislavanfrievjava@gmail.com')" class="copy-text">danislavanfrievjava@gmail.com</button></p>
+				<p class="about">telegram: <button onclick="copyText('@delsix')"  class="copy-text">@dels1x</button></p>
+				<p class="about">discord: <button onclick="copyText('delsix#6270')"  class="copy-text">delsix#6270</button></p>
+			</div>
+		</footer>
+	</div>
+</body>
 </html>

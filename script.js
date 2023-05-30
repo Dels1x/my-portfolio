@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', function() {
-	let everything = document.getElementById('everything');
-	let introElement = document.getElementById('intro');
+	const everything = document.getElementById('everything');
+	const introElement = document.getElementById('intro');
 	everything.style.opacity = '0'
 	introElement.style.opacity = '1'
 	setTimeout(function() {
@@ -8,19 +8,38 @@ window.addEventListener('DOMContentLoaded', function() {
 		introElement.style.opacity = '0'
 		setTimeout(function() {
 			introElement.remove();
-		}, 1000);
-	}, 1000);
-
+		}, 1200);
+	}, 1200);
 });
 
 function scrollToSection(sectionId) {
-	let section = document.getElementById(sectionId);
+	const section = document.getElementById(sectionId);
 
-	let rect = section.getBoundingClientRect();
-	let yCoordinate = rect.top + window.pageYOffset;
+	const rect = section.getBoundingClientRect();
+	const yCoordinate = rect.top + window.pageYOffset;
   
 	window.scrollTo({
   		top: yCoordinate - 75, // -75 for accounting nav height
   		behavior: 'smooth' // You can use 'auto' or 'instant' for different scrolling behavior
+	});
+}
+
+function copyText(text) {
+	navigator.clipboard.writeText(text)
+		.then(() => {
+			console.log('Text copied to clipboard:',text);
+			// Perform any additional actions upon successful copy
+		})
+		.catch((err) => {
+			console.error('Error copying text:', err);
+			// Handle any errors that occur during the copy process
+		});
+}
+
+function toggleTheme() {
+	const elementsToStyle = document.querySelectorAll("main, footer, nav");
+
+	elementsToStyle.forEach((element) => {
+			element.classList.toggle("dark-theme");
 	});
 }
