@@ -109,10 +109,12 @@ legend {
 
 
 main {
-	padding-top: 90px;
-	padding-left: 200px;
-	padding-right: 200px;
+	padding-top: 120px;
+	padding-left: 20px; /* Adjust the padding as needed */
+	padding-right: 20px; /* Adjust the padding as needed */
 	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto; /* Center the element horizontally */
 }
 
 footer {
@@ -132,7 +134,7 @@ section {
 h1 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
-	font-size: 50px;
+	font-size: 40px;
 }
 
 h2 {
@@ -214,12 +216,12 @@ nav {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: #171717;
+	background-color: #000;
 	margin: 0;
 	border-bottom: 1px solid #FFF;
- 	display: flex;
- 	justify-content: space-between;
- 	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 #title {
@@ -236,7 +238,7 @@ nav {
 }
 
 #buttons {
-  display: flex;
+	display: flex;
 }
 
 .button {
@@ -282,7 +284,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Create three equal-width columns */
   list-style: none;
-	padding: 0 250px;
+	padding: 0 12%;
 	gap: 8px; /* Add some gap between items */
   font-size: 40px;
   font-family: "Kanit", sans-serif;
@@ -291,12 +293,12 @@ nav {
 
 #skills li {
   text-align: center; /* Optionally center-align the skills */
-  font-size: 40px;
+  font-size: 28px;
   transition: font-size 100ms ease-in-out;
 }
 
 #skills li:hover {
-	font-size: 44px;
+	font-size: 30px;
 	transition: font-size 200ms ease-in-out;
 }
 
@@ -330,4 +332,33 @@ nav {
 
 .dark-theme .copy-text {
 	color: #ddd;
+}
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 1080px) {
+	nav {
+		flex-direction: column;
+		align-items: center;
+		padding: 10px;
+	}
+
+	#title {
+		height: 32px;
+	}
+
+	#buttons {
+		margin-top: 10px;
+	}
+
+	.button {
+		font-size: 20px;
+		padding: 5px 10px;
+	}
+
+	#everything {
+		height: 100%;
+		width: 100%;
+	}
+
 }
