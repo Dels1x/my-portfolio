@@ -19,7 +19,7 @@ function scrollToSection(sectionId) {
 	const yCoordinate = rect.top + window.pageYOffset;
   
 	window.scrollTo({
-  		top: yCoordinate - 75, // -75 for accounting nav height
+  		top: yCoordinate - 100, // -75 for accounting nav height
   		behavior: 'smooth' // You can use 'auto' or 'instant' for different scrolling behavior
 	});
 }
