@@ -169,6 +169,7 @@ h3 {
 
 .project:hover {
 	box-shadow: 0 0 0 #000, 0 0 0 #000, 0 2px 0 #000, 0 0 0 #000;
+	color: #444;
 }
 
 .project .title {
@@ -178,20 +179,8 @@ h3 {
 	font-weight: 700;
 }
 
-#my-projects a {
-	transition: color 250ms, text-shadow 250ms;
-}
-
-#my-projects .title:hover {
-	color: white;
-	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-	transition: color 500ms, text-shadow 500ms;
-}
-
 #my-projects .headline:hover {
-	color: white;
-	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-	transition: color 500ms, text-shadow 500ms;
+	color: #444;
 }
 
 .project p {
